@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@font-face {
+	font-family:Lato;
+	src: url(fonts/lato-regular-webfont.woff2);
+	font-weight:400;
+	font-style:normal;
+}
+@font-face {
+	font-family:MuseoSansCyrl-100;	
+	src: url(fonts/MuseoSansCyrl-100.woff);
+	font-weight:400;
+	font-style:normal;
+}
+@font-face {
+	font-family:MuseoSansCyrl-300;	
+	src: url(fonts/MuseoSansCyrl-300.woff);
+	font-weight:400;
+	font-style:normal;
+}
+@font-face {
+	font-family:MuseoSansCyrl-500;	
+	src: url(fonts/MuseoSansCyrl-500.woff);
+	font-weight:400;
+	font-style:normal;
+}
+@font-face {
+	font-family:MuseoSansCyrl-900;	
+	src: url(fonts/MuseoSansCyrl-900.woff);
+	font-weight:400;
+	font-style:normal;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+body {
+	background-color: #D2E0FC;
+}
+
+.img {
+	margin-top: 31px;
+	border-radius: 50%;
+}
+.img--without-border {
+	border-radius: 0%;
+}
+.main {	
+	display: -webkit-box;	
+	display: -ms-flexbox;	
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;	
+	-webkit-box-align: center;	
+	    -ms-flex-align: center;	
+	        align-items: center;
+}
+.text {
+	font-family: "MuseoSansCyrl-300";
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.text__small {
+	font-family: "MuseoSansCyrl-500";
+	margin-top: 12px;
+	line-height: 18px;
+	font-size: 14px;
+	text-align: center;
+	color: #768196;
+}
+.text__strong {
+	font-family: "MuseoSansCyrl-900";
+	font-size: 18px;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	color: #404651;
+}
+.text__header {
+	font-family: "MuseoSansCyrl-900";
+	font-size: 21px;
+	margin-top: 30px;
+	margin-bottom: 0px;	
+}
+.text__header--big {
+	color: #404651;
+	margin-top: 32px;
+	font-size: 20px;
+}
+.save_connection {
+	position: relative;
+	font-family: "Arial";
+	color: #4bb34b;
+	font-size: 14px;
+	margin-top: 44px;
+	margin-bottom: 0px;
+	padding-left: 45px;
+}
+.save_connection::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 14px;
+	height: 16px;
+	left: 22px;
+	background: url("img/lock.png") no-repeat;
+}
+.save_connection--second {
+	margin-top: 48px;
+}
+.save_connection--third {
+	margin-top: 33px;
+}
+.loading {
+	display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #7571f9;
+  margin: 35px 5px;
+  opacity: 0;
+  -webkit-animation: opacitychange 1s ease-in-out infinite;
+          animation: opacitychange 1s ease-in-out infinite;
+}
+.loading__delay-2 {
+	 -webkit-animation: opacitychange 1s ease-in-out 0.33s infinite;
+	         animation: opacitychange 1s ease-in-out 0.33s infinite;
+}
+.loading__delay-3 {
+	 -webkit-animation: opacitychange 1s ease-in-out 0.66s infinite;
+	         animation: opacitychange 1s ease-in-out 0.66s infinite;
+}
+@-webkit-keyframes opacitychange{
+0%, 100% {
+    opacity: 0;
+	}
+60% {
+    opacity: 1;
+	}
+}
+@keyframes opacitychange{
+0%, 100% {
+    opacity: 0;
+	}
+60% {
+    opacity: 1;
+	}
+}
+.form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.btn {
+	font-family: "MuseoSansCyrl-900";
+	font-size: 14px;
+	width: 180px;
+	margin-top: 17px;
+	margin-bottom: -32px;
+	padding: 15px 0px;
+	border-radius: 10px;
+	border: none;
+	background-color: #E3C86D;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#E4C96F), to(#F7DB93));
+  background-image: -o-linear-gradient(bottom, #E4C96F, #F7DB93);
+  background-image: linear-gradient(to top, #E4C96F, #F7DB93);
+  cursor: pointer;
+}
+.btn--panel {
+	width: 260px;
+}
+.btn--close {
+	width: 210px;
+}
+.form__label {
+	font-family: "MuseoSansCyrl-500";
+	font-size: 14px;
+	color: #768196;
+	cursor: pointer;
+	position: relative;
+	margin-top: 6px;
+	padding-left: 50px;
+}
+.form__label--second {
+	margin-top: 3px;
+	padding-left: 20px;
+}
+.img--margin-bottom {
+	margin-bottom: -9px;
+}
+.form__label::before {
+	content: "";
+	z-index: 2;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left:27px;
+	top: 0px;
+	border-radius: 2px;
+	background: url("img/checkbox.png") no-repeat;
+}
+.form__label--second::before {
+	left: 0px;
+}
+.form__input:checked + .form__label::before {
+	background: url("img/checkbox_checked.png") no-repeat;
+}
+.link {
+	color: #889EF7;
+}
+.text__small--1,
+.text__small--4,
+.text__small--5,
+.text__small--2 {
+	display: none;
+}
+
+@media (max-width: 750px) {
+	.text__strong--second {
+		max-width: 220px;
+		text-align: center;
+	}
+	.save_connection {
+		max-width: 200px;
+		text-align: center;
+		padding-left: 0px;
+		padding-top: 25px;
+	}
+	.save_connection::before {
+		top: 0px;
+		left: 46%;
+	}
+	.img--1 {
+		width: 144px;
+		height: 150px;
+		margin-bottom: -12px;
+	}
+	.img--2 {
+		width: 143px;
+		height: 150px;
+		margin-bottom: -12px;
+	}
+	.img--5 {
+		width: 153px;
+		height: 150px;
+		margin-bottom: -12px;
+	}
+	.save_connection--1 {
+		display: none;
+	}
+	.btn--1 {
+		margin-top: 98px;
+		margin-bottom: 14px;
+	}
+	.form__label--1 {
+		padding-left: 21px;
+	}
+	.form__label--1::before {
+		left: 0px;
+	}
+	.text__small--11 {
+		display: none;
+	}
+	.text__small--1 {
+		display: block;
+		max-width: 220px;
+	}
+	.text__small--2 {
+		display: block;
+		max-width: 253px;
+	}
+	.text__small--4 {
+		display: block;
+		max-width: 273px;
+	}
+	.text__small--5 {
+		display: block;
+		max-width: 263px;
+		text-align: center;
+	}
+	.btn--2 {
+		margin-top: 77px;
+		margin-bottom: 14px;
+	}
+	.btn--3 {
+		margin-top: 73px;
+		margin-bottom: 17px;
+	}
+	.text__header--big--5 {
+		max-width: 290px;
+		text-align: center;
+	}
+	.text__header--big--6 {
+		max-width: 310px;
+		text-align: center;
+	}
+	.text__small--6 {
+		margin-top: 16px;
+		max-width: 310px;
+		text-align: center;
+	}
+	.btn--6 {
+		margin-top: 115px;
+	}
+}
